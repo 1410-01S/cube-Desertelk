@@ -365,9 +365,9 @@ public class Cube {
 	public static void main(final String[] args)
 			throws IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		ArrayList commands = new ArrayList();
 
 		Cube myCube = new Cube();
-
 
 		boolean argsCheck = false;
 		int argsRunIndex = 0;
@@ -399,27 +399,27 @@ public class Cube {
 					myCube.showCube();
 					break;
 
-				case "l"://orange face
+				case "l":// orange face
 					myCube.turnFace(2, "c");
 					myCube.showCube();
 					break;
 
-				case "d"://white face
+				case "d":// white face
 					myCube.turnFace(5, "c");
 					myCube.showCube();
 					break;
 
-				case "r"://red face
+				case "r":// red face
 					myCube.turnFace(0, "c");
 					myCube.showCube();
 					break;
 
-				case "f"://blue face
+				case "f":// blue face
 					myCube.turnFace(1, "c");
 					myCube.showCube();
 					break;
 
-				case "b"://green face
+				case "b":// green face
 					myCube.turnFace(3, "c");
 					myCube.showCube();
 					break;
@@ -454,13 +454,15 @@ public class Cube {
 					myCube.showCube();
 					break;
 
-				case "s":
-					break;
+				case "s": // This is meant to solve the cube.
 				
+					break;
+
 				case "q":
 					proceed = false;
 					break;
 			}
+
 		}
-}
+	}
 }
